@@ -10,9 +10,19 @@
     <div>
         <button onclick="showAlert()">Click here</button>
     </div>
+    <div id="app">
+        <input type="text" name="name" id="name" />
+        <button class="button">Add</button>
+    </div>
     <script>
         function showAlert() {
             alert('The button was clicked')
+        }
+
+        let btntElement = document.querySelector('button.button')
+
+        btntElement.onclick = function() {
+            alert('Button CLIKED!!!')
         }
     </script>
 </body>
