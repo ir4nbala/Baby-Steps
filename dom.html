@@ -19,10 +19,13 @@
             alert('The button was clicked')
         }
 
-        let btntElement = document.querySelector('button.button')
+        var inputElement = document.querySelector('input[name=name]')
+        const btntElement = document.querySelector('button.button')
 
         btntElement.onclick = function() {
-            alert('Button CLIKED!!!')
+            const text = inputElement.value
+
+            alert(text)
         }
     </script>
 </body>
